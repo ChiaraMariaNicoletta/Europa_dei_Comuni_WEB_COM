@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Europa dei Comuni</title>
+
+  <!-- Bootstrap 5 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- CSS personalizzati -->
+  <link href="./myCSSeurope.css" rel="stylesheet" type="text/css">
+  <link href="./CSShome.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <!-- COOKIE MODAL -->
+  <div id="cookie-modal" class="cookie-modal" aria-hidden="true">
+    <div class="cookie-overlay"></div>
+
+    <div class="cookie-box" role="dialog" aria-modal="true" aria-labelledby="cookie-title">
+      <h2 id="cookie-title">Cookie Notice</h2>
+
+      <p>
+        This website uses cookies to ensure the proper functioning of the site and
+        to improve the browsing experience.
+      </p>
+
+      <p class="cookie-small">
+        By clicking “Accept”, you consent to the use of technical cookies necessary
+        for the proper functioning of the website.
+      </p>
+
+      <div class="cookie-actions">
+        <button id="accept-cookies" class="cookie-btn primary" type="button">Accept</button>
+        <button id="reject-cookies" class="cookie-btn secondary" type="button">Reject</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FORM POPUP -->
+  <div id="form-popup" class="form-popup">
+    <div class="popup-box">
+      <h3>Message Sent</h3>
+      <p>
+        Your message has been successfully sent.
+        Our team will get back to you soon.
+      </p>
+
+      <button id="close-popup" type="button">Close</button>
+    </div>
+  </div>
+
+  <header>
+    <div class="pre-header">
+      <div class="container-fluid">
+        <span>europa@anci.lombardia.it</span>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img
+            class="header-logo-europa"
+            src="./logos/EUROPA_DEI_COMUNI__2_-removebg-preview.png"
+            alt="Europa dei Comuni logo"
+          >
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainMenu"
+          aria-controls="mainMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="mainMenu">
+          <ul class="navbar-nav gap-lg-5 text-center">
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="./europeprojects.html">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="./europeevents.html">EVENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="./europenews.html">NEWS</a>
+            </li>
+          </ul>
+        </div>
+
+        <a class="d-none d-lg-block" href="https://anci.lombardia.it/" target="_blank" rel="noopener noreferrer">
+          <img
+            class="header-logo-anci"
+            src="./logos/logo_ANCI-lombardia_without.background - Copia.png"
+            alt="ANCI Lombardia logo"
+          >
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="slider">
+      <img src="images/5483_20251112_114156.jpg" class="active" alt="Europa dei Comuni activity">
+      <img src="images/5264_Bianchi_Verona.jpg" alt="Institutional meeting">
+      <img src="images/5271_Bruxelles_Bianchi.jpg" alt="European institutional activity">
+    </div>
+  </section>
+
+  <!-- BANNER -->
+  <section class="slogan-banner">
+    <div class="container text-center">
+      <h1>Where Europe meets Local Territories</h1>
+      <p>We support local territories in European project design</p>
+    </div>
+  </section>
+
+  <!-- TOC -->
+  <aside class="toc">
+    <ul class="mb-0">
+      <li><a href="#sez1">ABOUT US</a></li>
+      <li><a href="#sez2">WHAT WE DO</a></li>
+      <li><a href="#sez3">OVERVIEW</a></li>
+      <li><a href="#sez4">CONTACT US</a></li>
+    </ul>
+  </aside>
+
+  <main class="content">
+
+    <!-- ABOUT US -->
+    <section id="sez1" class="aboutus py-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="aboutus-content">
+              <div class="aboutus-tagline">
+                Europe of Municipalities - Europa dei Comuni
+              </div>
+
+              <h1 class="aboutus-title">ABOUT US</h1>
+
+              <p class="aboutus-subtitle">
+                We connect Lombardy's territories to European institutions and promote active participation in European decision-making processes.
+              </p>
+
+              <div class="aboutus-text">
+                <p>
+                  We are the European Department of ANCI Lombardia. We work to facilitate access to funding opportunities and promote
+                  awareness on various European issues.
+                </p>
+
+                <p>
+                  Our mission is to enhance the skills and planning capabilities of local authorities, promote local experiences,
+                  and create sustainable networks and partnerships at the European level.
+                </p>
+
+                <p>
+                  Our work serves local communities so that they can make the most of the challenges and opportunities arising from
+                  European Union policies and funding.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="aboutus-image">
+              <img
+                src="images/5469_Guerra_Foti.jpeg"
+                class="img-fluid"
+                alt="Europa dei Comuni team activity"
+              >
+            </div>
+          </div>
+        </div>
+
+        <blockquote class="aboutus-quote mt-4">
+          We believe that a Europe that is closer to its territories is only possible if local governments have a voice,
+          the tools, and the skills to actively participate in European policies. The Europe Department is the association's
+          point of reference for translating this commitment into concrete results for Lombardy's municipalities.
+        </blockquote>
+      </div>
+    </section>
+
+    <div class="section-divider-blue"></div>
+
+    <!-- WHAT WE DO -->
+    <section id="sez2" class="whatwedo py-5">
+      <div class="container">
+        <h2 class="whatwedo-title text-center">WHAT WE DO</h2>
+
+        <p class="whatwedo-subtitle text-center">
+          We support our office internally and provide assistance to local municipalities to strengthen European cooperation.
+        </p>
+
+        <div class="row g-4 mt-2">
+          <div class="col-lg-6">
+            <h3 class="column-title">Inside our office</h3>
+
+            <div class="whatwedo-box">
+              <div class="box-icon">🛠️</div>
+              <h4>Project Planning</h4>
+              <p>European project design, monitoring, and internal coordination.</p>
+            </div>
+
+            <div class="whatwedo-box">
+              <div class="box-icon">🏛️</div>
+              <h4>EU Department Activities</h4>
+              <p>Institutional coordination, technical advice, and European networking.</p>
+            </div>
+
+            <div class="whatwedo-box">
+              <div class="box-icon">👥</div>
+              <h4>Team &amp; Interdepartmental Coordination</h4>
+              <p>Planning meetings and fostering collaboration within the EU department and with other ANCI departments.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <h3 class="column-title">For Municipalities</h3>
+
+            <div class="whatwedo-box">
+              <div class="box-icon">🤝</div>
+              <h4>Municipal Assistance</h4>
+              <p>Support municipalities in accessing EU funds and project participation.</p>
+            </div>
+
+            <div class="whatwedo-box">
+              <div class="box-icon">🌐</div>
+              <h4>Networking</h4>
+              <p>Facilitate partnerships and collaboration among local authorities and institutions.</p>
+            </div>
+
+            <div class="whatwedo-box">
+              <div class="box-icon">📅</div>
+              <h4>Events &amp; Conferences</h4>
+              <p>Organize training, conferences, and knowledge-sharing events for municipalities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider-blue"></div>
+
+    <!-- OVERVIEW -->
+    <section id="sez3" class="overview py-5">
+      <div class="container">
+        <h2 class="overview-title text-center mb-5">OVERVIEW</h2>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="overview-box h-100 text-center p-4 shadow-sm rounded bg-white">
+              <div class="overview-number">11</div>
+              <div class="overview-label">Active projects</div>
+              <ul class="overview-details text-start mt-3">
+                <li>2 European projects</li>
+                <li>4 Interreg Italy-Switzerland</li>
+                <li>3 AICS projects</li>
+                <li>1 Fondazione Cariplo project</li>
+                <li>1 Europe Direct project</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="overview-box h-100 text-center p-4 shadow-sm rounded bg-white d-flex flex-column justify-content-center">
+              <div class="overview-number">+500</div>
+              <div class="overview-label">Partners &amp; Contacts</div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="overview-box h-100 text-center p-4 shadow-sm rounded bg-white">
+              <div class="overview-number">6</div>
+              <div class="overview-label">Events in planning</div>
+              <ul class="overview-details text-start mt-3">
+                <li>1 City Councillors event</li>
+                <li>3 Workshops</li>
+                <li>1 Seminar</li>
+                <li>1 Week of Cities &amp; Regions event</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="overview-buttons d-flex flex-column flex-md-row justify-content-center gap-3 mt-5">
+          <a href="./europeprojects.html" class="btn btn-primary px-4">See all projects</a>
+          <a href="./europeevents.html" class="btn btn-outline-primary px-4">See all events</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider-blue"></div>
+
+    <!-- CONTACT -->
+    <section id="sez4" class="contactus py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="contact-container">
+              <h2 class="contact-title text-center">CONTACT US</h2>
+
+              <p class="contact-subtitle text-center mb-4">
+                You can reach out to the European Office of ANCI Lombardia for questions, feedback, or project inquiries.
+              </p>
+
+              <form class="contact-form" id="contact-form">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea id="message" name="message" rows="6" class="form-control" placeholder="Write your message..." required></textarea>
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary px-4">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-md-4">
+          <div class="footer-col">
+            <h3>Contact</h3>
+            <p>Email: europa@anci.lombardia.it</p>
+            <p>Phone: +39 02 7262 9674</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="footer-col">
+            <h3>Follow Us</h3>
+
+            <div class="footer-social d-flex gap-3 flex-wrap">
+              <a href="https://www.linkedin.com/showcase/europa-dei-comuni" target="_blank" rel="noopener noreferrer">
+                <img src="icons/linkedin_3938044.png" alt="LinkedIn">
+              </a>
+
+              <a href="https://www.facebook.com/anci.lombardia/" target="_blank" rel="noopener noreferrer">
+                <img src="icons/facebook_2673726.png" alt="Facebook">
+              </a>
+
+              <a href="https://youtube.com/@anci_lombardia?si=CEsKxQLe9LBh0VyZ" target="_blank" rel="noopener noreferrer">
+                <img src="icons/youtube_2673883.png" alt="Youtube">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="footer-col">
+            <h3>Where We Are</h3>
+            <p>Via Rovello 2, Milan, Lombardy, Italy</p>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.163228347202!2d9.1847795!3d45.4665157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6ac29b25da7%3A0x9b0c02e86732118a!2sANCI%20Lombardia!5e0!3m2!1sen!2sit!4v1771770162923!5m2!1sen!2sit"
+              width="100%"
+              height="150"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="ANCI Lombardia map"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-privacy mt-4">
+        <h4>Privacy &amp; Cookies</h4>
+        <p>
+          This website uses cookies exclusively for technical and functional purposes
+          to ensure the proper functioning of the website and to store user preferences.
+        </p>
+
+        <p>
+          The information presented on this website relates to the activities of the
+          Europe Department of ANCI Lombardia and aims to provide an overview of projects,
+          events, and initiatives connected to European cooperation and local authorities.
+        </p>
+
+        <p>
+          For further information, users may contact the Europe Department of ANCI Lombardia
+          through the contact details provided on this website.
+        </p>
+      </div>
+
+      <div class="footer-bottom"></div>
+    </div>
+  </footer>
+
+  <script src="cookies.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="JSeurope.js"></script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PAGE LAYOUT */
+.projects-page {
+    padding-top: 8.5rem;
+    background:
+        linear-gradient(180deg, #f7fbfe 0%, #eef5fa 100%);
+    min-height: 100vh;
+}
+
+/* HERO */
+.projects-hero {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.projects-eyebrow {
+    display: inline-block;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    color: #00416F;
+    font-weight: 700;
+    border-left: 0.25rem solid #00416F;
+    padding-left: 0.7rem;
+}
+
+.projects-title {
+    font-size: 2.6rem;
+    color: #00416F;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.projects-subtitle {
+    max-width: 48rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.projects-counter-text {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0;
+}
+
+#projectCount {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #00416F;
+}
+
+/* SECTION */
+.projects-section {
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
+
+/* PROJECT CARD */
+.project-card {
+    border-radius: 1rem;
+    overflow: hidden;
+    background: #ffffff;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1) !important;
+}
+
+.project-card .card-body {
+    padding: 1.5rem;
+    gap: 0.2rem;
+}
+
+/* BADGES */
+.project-badge {
+    display: inline-block;
+    width: fit-content;
+    font-size: 0.72rem;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    padding: 0.55rem 0.8rem;
+    border-radius: 999px;
+}
+
+/* TITLES AND TEXT */
+.project-title {
+    font-size: 1.45rem;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+}
+
+.project-name {
+    font-size: 0.98rem;
+    font-weight: 600;
+    margin-bottom: 0.9rem;
+    line-height: 1.6;
+}
+
+.project-text {
+    font-size: 0.96rem;
+    line-height: 1.75;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.project-meta {
+    margin-bottom: 1.2rem;
+}
+
+.project-meta p {
+    margin-bottom: 0.55rem;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: #2e2e2e;
+}
+
+/* DIVIDER */
+.project-divider {
+    border: 0;
+    height: 3px;
+    border-radius: 999px;
+    opacity: 1;
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+/* BUTTONS */
+.project-btn {
+    align-self: flex-start;
+    border-radius: 999px;
+    padding: 0.75rem 1.2rem;
+    font-weight: 600;
+    border-width: 0;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.project-btn:hover,
+.project-btn:focus {
+    transform: translateY(-1px);
+    opacity: 0.95;
+}
+
+/* ENVIRONMENT */
+.badge-environment {
+    background-color: #E8F5E9;
+    color: #2E7D32;
+}
+
+.text-environment {
+    color: #2E7D32;
+}
+
+.divider-environment {
+    background: linear-gradient(90deg, #81C784 0%, #2E7D32 100%);
+}
+
+.btn-environment {
+    background-color: #2E7D32;
+    color: #ffffff;
+}
+
+.btn-environment:hover,
+.btn-environment:focus {
+    background-color: #256628;
+    color: #ffffff;
+}
+
+/* CULTURE */
+.badge-culture {
+    background-color: #F3E5F5;
+    color: #7B1FA2;
+}
+
+.text-culture {
+    color: #7B1FA2;
+}
+
+.divider-culture {
+    background: linear-gradient(90deg, #BA68C8 0%, #7B1FA2 100%);
+}
+
+.btn-culture {
+    background-color: #7B1FA2;
+    color: #ffffff;
+}
+
+.btn-culture:hover,
+.btn-culture:focus {
+    background-color: #64198a;
+    color: #ffffff;
+}
+
+/* WELFARE */
+.badge-welfare {
+    background-color: #FFF3E0;
+    color: #EF6C00;
+}
+
+.text-welfare {
+    color: #EF6C00;
+}
+
+.divider-welfare {
+    background: linear-gradient(90deg, #FFB74D 0%, #EF6C00 100%);
+}
+
+.btn-welfare {
+    background-color: #EF6C00;
+    color: #ffffff;
+}
+
+.btn-welfare:hover,
+.btn-welfare:focus {
+    background-color: #c95a00;
+    color: #ffffff;
+}
+
+/* ECONOMIC DEVELOPMENT */
+.badge-economic {
+    background-color: #E3F2FD;
+    color: #1565C0;
+}
+
+.text-economic {
+    color: #1565C0;
+}
+
+.divider-economic {
+    background: linear-gradient(90deg, #64B5F6 0%, #1565C0 100%);
+}
+
+.btn-economic {
+    background-color: #1565C0;
+    color: #ffffff;
+}
+
+.btn-economic:hover,
+.btn-economic:focus {
+    background-color: #114f97;
+    color: #ffffff;
+}
+
+/* EUROPEAN POLICIES */
+.badge-policies {
+    background-color: #E8EAF6;
+    color: #3949AB;
+}
+
+.text-policies {
+    color: #3949AB;
+}
+
+.divider-policies {
+    background: linear-gradient(90deg, #7986CB 0%, #3949AB 100%);
+}
+
+.btn-policies {
+    background-color: #3949AB;
+    color: #ffffff;
+}
+
+.btn-policies:hover,
+.btn-policies:focus {
+    background-color: #2f3d91;
+    color: #ffffff;
+}
+
+/* DEVELOPMENT COOPERATION */
+.badge-cooperation {
+    background-color: #FCE4EC;
+    color: #C2185B;
+}
+
+.text-cooperation {
+    color: #C2185B;
+}
+
+.divider-cooperation {
+    background: linear-gradient(90deg, #F06292 0%, #C2185B 100%);
+}
+
+.btn-cooperation {
+    background-color: #C2185B;
+    color: #ffffff;
+}
+
+.btn-cooperation:hover,
+.btn-cooperation:focus {
+    background-color: #a3154d;
+    color: #ffffff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991.98px) {
+    .projects-page {
+        padding-top: 8rem;
+    }
+
+    .projects-hero {
+        padding-top: 2.5rem;
+    }
+
+    .projects-title {
+        font-size: 2.2rem;
+    }
+
+    .projects-subtitle {
+        font-size: 1rem;
+    }
+
+    .project-title {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .projects-page {
+        padding-top: 7.4rem;
+    }
+
+    .projects-hero {
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .projects-title {
+        font-size: 1.9rem;
+    }
+
+    .projects-subtitle {
+        font-size: 0.96rem;
+        line-height: 1.7;
+    }
+
+    .project-card .card-body {
+        padding: 1.2rem;
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+    }
+
+    .project-name,
+    .project-text,
+    .project-meta p {
+        font-size: 0.92rem;
+    }
+
+    .project-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

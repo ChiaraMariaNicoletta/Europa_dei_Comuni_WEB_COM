@@ -1,0 +1,262 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #1f1f1f;
+    background-color: #ffffff;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+.pre-header {
+    background-color: #01416F;
+    color: #ffffff;
+    font-size: 0.85rem;
+    padding: 0.5rem 0;
+}
+
+.pre-header .container-fluid,
+.pre-header .container {
+    text-align: center;
+}
+
+.pre-header span {
+    opacity: 0.95;
+    letter-spacing: 0.2px;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.94) !important;
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(0, 65, 111, 0.18) !important;
+    box-shadow: 0 0.15rem 0.5rem rgba(0, 0, 0, 0.06);
+    min-height: 5.2rem;
+}
+
+.navbar .container {
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.header-logo-europa {
+    width: 12rem;
+    height: auto;
+    display: block;
+}
+
+.header-logo-anci {
+    width: 11rem;
+    height: auto;
+    display: block;
+}
+
+.navbar-nav .nav-link {
+    color: #00416F !important;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #001f35 !important;
+    transform: translateY(-1px);
+}
+
+.navbar-nav .nav-link.active {
+    color: #001f35 !important;
+}
+
+.navbar-toggler {
+    border: 1px solid rgba(0, 65, 111, 0.35);
+    padding: 0.35rem 0.55rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.18rem rgba(0, 65, 111, 0.15);
+}
+
+/* MAIN CONTENT OFFSET FOR FIXED HEADER */
+main,
+.content,
+.news-page,
+.events-page,
+.projects {
+    margin-top: 0;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #002b45;
+    color: #ffffff;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer .container {
+    max-width: 1320px;
+}
+
+.footer-col h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.footer-col p {
+    font-size: 0.95rem;
+    color: #d0d8df;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.footer-social {
+    margin-top: 1rem;
+}
+
+.footer-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.footer-social img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    cursor: pointer;
+}
+
+.footer-social img:hover {
+    transform: scale(1.12);
+    opacity: 0.85;
+}
+
+.footer iframe {
+    border-radius: 0.6rem;
+    margin-top: 0.8rem;
+}
+
+.footer-privacy {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-privacy h4 {
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+    color: #ffffff;
+}
+
+.footer-privacy p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: #d0d8df;
+    margin-bottom: 0.7rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.85rem;
+    color: #b0c4d4;
+    min-height: 1px;
+}
+
+/* GENERIC LINKS */
+a {
+    transition: color 0.2s ease;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991.98px) {
+    html {
+        scroll-padding-top: 9rem;
+    }
+
+    .navbar {
+        min-height: auto;
+    }
+
+    .header-logo-europa {
+        width: 8.5rem;
+    }
+
+    .header-logo-anci {
+        width: 7.5rem;
+    }
+
+    .navbar-collapse {
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        padding-top: 0.55rem;
+        padding-bottom: 0.55rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    html {
+        scroll-padding-top: 8.5rem;
+    }
+
+    .pre-header {
+        font-size: 0.78rem;
+    }
+
+    .header-logo-europa {
+        width: 7rem;
+    }
+
+    .header-logo-anci {
+        width: 6rem;
+    }
+
+    .footer {
+        padding-top: 1.6rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .footer-col h3 {
+        font-size: 1.1rem;
+    }
+
+    .footer-col p,
+    .footer-privacy p {
+        font-size: 0.9rem;
+    }
+
+    .footer-social img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}

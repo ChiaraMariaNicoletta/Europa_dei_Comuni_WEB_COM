@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Europa dei Comuni: News</title>
+
+  <!-- Bootstrap 5 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- CSS personalizzati -->
+  <link href="./myCSSeurope.css" rel="stylesheet" type="text/css">
+  <link href="./CSSnews.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <header>
+    <div class="pre-header">
+      <div class="container-fluid">
+        <span>europa@anci.lombardia.it</span>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img
+            class="header-logo-europa"
+            src="./logos/EUROPA_DEI_COMUNI__2_-removebg-preview.png"
+            alt="Europa dei Comuni logo"
+          >
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainMenu"
+          aria-controls="mainMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="mainMenu">
+          <ul class="navbar-nav gap-lg-5 text-center">
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="./europeprojects.html">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="./europeevents.html">EVENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" aria-current="page" href="./europenews.html">NEWS</a>
+            </li>
+          </ul>
+        </div>
+
+        <a class="d-none d-lg-block" href="https://anci.lombardia.it/" target="_blank" rel="noopener noreferrer">
+          <img
+            class="header-logo-anci"
+            src="./logos/logo_ANCI-lombardia_without.background - Copia.png"
+            alt="ANCI Lombardia logo"
+          >
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="news-page">
+    <section class="news-hero py-5">
+      <div class="container text-center">
+        <span class="news-eyebrow">Europa dei Comuni</span>
+        <h1 class="news-title mt-2">News &amp; Updates</h1>
+        <p class="news-subtitle mx-auto">
+          Latest news to stay updated on everything that <strong>Europa dei Comuni</strong> is up to!
+        </p>
+      </div>
+    </section>
+
+    <!-- FILTER -->
+    <section class="news-filters container mb-4">
+      <div class="news-filters-box d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3">
+        <div class="filter-group d-flex flex-wrap align-items-center gap-2">
+          <span class="filter-label">Type</span>
+          <button class="chip is-active btn btn-outline-primary" type="button" data-filter-type="all">All</button>
+          <button class="chip btn btn-outline-primary" type="button" data-filter-type="news">News</button>
+          <button class="chip btn btn-outline-primary" type="button" data-filter-type="circular">Circulars</button>
+        </div>
+
+        <div class="filter-status">
+          Showing <span id="visibleCount">0</span> items
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWS LIST -->
+    <section class="container news-list">
+      <div class="row g-4">
+
+        <div class="col-12">
+          <article class="news-card card border-0 shadow-sm h-100" data-type="news">
+            <div class="card-body">
+              <div class="news-meta">
+                <span class="pill pill-news">NEWS</span>
+                <time datetime="2026-02-13" class="news-date">13 Feb 2026</time>
+              </div>
+              <h2 class="news-card-title">
+                Direct Funds (CERV): Information Meetings – 24 &amp; 26 February
+              </h2>
+              <p class="news-text">
+                <strong>Webinar Presentation of CERV &amp; EUI Calls for Proposals</strong><br>
+                On Tuesday, February 24, the webinar “Europe of Opportunities: Directly Managed Funds: Presentation
+                of CERV and EUI Calls for Proposals” will be held, organized in collaboration with ANCI Nazionale.<br>
+                <a href="https://forms.office.com/pages/responsepage.aspx?id=JwRewnQpD0Wa4nNExbZvCXTKVOVaXnhHl3OYDb-V3ldUMzU2QzMyNkU1QTg5RDhSMUNJQkZQVjE2Ny4u&route=shorturl" target="_blank" rel="noopener noreferrer">
+                  Sign up!
+                </a>
+              </p>
+              <p class="news-text">
+                <strong>CERV Networks of Cities 2026 Infosession</strong><br>
+                On Thursday, February 26, there will be an infosession dedicated to the CERV City Networks 2026 Call for
+                Proposals, organized by the European Commission.<br>
+                <a href="https://www.eacea.ec.europa.eu/news-events/events/online-info-session-call-proposals-networks-towns-cerv-2026-citizens-town-nt-2026-02-26_en" target="_blank" rel="noopener noreferrer">
+                  Sign up!
+                </a>
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12">
+          <article class="news-card card border-0 shadow-sm h-100" data-type="news">
+            <div class="card-body">
+              <div class="news-meta">
+                <span class="pill pill-news">NEWS</span>
+                <time datetime="2026-02-09" class="news-date">9 Feb 2026</time>
+              </div>
+              <h2 class="news-card-title">
+                LinkedIn “Europa dei Comuni”: ANCI Lombardia’s Europe Office
+              </h2>
+              <p class="news-text">
+                The new <a href="https://www.linkedin.com/showcase/europa-dei-comuni" target="_blank" rel="noopener noreferrer">LinkedIn “Europa dei Comuni”</a>
+                page is now online, a showcase page by ANCI Lombardia dedicated to the activities of the Europe Office.
+                <br>
+                The page was created with the aim of strengthening communication and sharing European opportunities aimed at
+                municipalities and local authorities in Lombardy, to stay up to date, share best practices, and strengthen
+                dialogue between the local and European levels.
+              </p>
+              <p class="news-text">
+                <b><i>We believe that a Europe that is closer to its territories is only possible if local governments have a voice,
+                the tools, and the skills to actively participate in European decision-making processes and policies.</i></b>
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12">
+          <article class="news-card card border-0 shadow-sm h-100" data-type="circular">
+            <div class="card-body">
+              <div class="news-meta">
+                <span class="pill pill-circular">CIRCULAR</span>
+                <time datetime="2026-01-29" class="news-date">29 Jan 2026</time>
+              </div>
+              <h2 class="news-card-title">
+                Appeal in Support of Ukrainian Local and Regional Authorities – Energy Emergency
+              </h2>
+              <p class="news-text">
+                For your information, please note that the President of the European Committee of the Regions and the Chair
+                of the CoR Working Group on Ukraine have issued a letter containing an urgent appeal for support for
+                Ukrainian cities and regions affected by the serious energy emergency.
+                <br>
+                Interested entities are invited to consider contributing by supplying energy equipment,
+                in accordance with the procedures set out in the attached communication.
+                We also encourage the maintenance and strengthening of existing direct partnerships
+                with Ukrainian counterparts as an effective means of concrete solidarity.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12">
+          <article class="news-card card border-0 shadow-sm h-100" data-type="circular">
+            <div class="card-body">
+              <div class="news-meta">
+                <span class="pill pill-circular">CIRCULAR</span>
+                <time datetime="2025-12-09" class="news-date">9 Dec 2025</time>
+              </div>
+              <h2 class="news-card-title">
+                Memorandum of understanding between the Municipality of Novovolynsk (Ukraine) and ANCI Lombardia
+              </h2>
+              <p class="news-excerpt">
+                At a particularly complex time for Ukraine, this collaboration takes on even deeper significance
+              </p>
+              <p class="news-text">
+                Signed by Rinaldo Mario Redaelli, Secretary General of ANCI Lombardia, and Borys Karpus,
+                mayor of the territorial community of the city of Novovolynsk, the agreement stems from a shared desire
+                to strengthen cooperation in the areas of public administration and service management, with the aim of
+                improving the efficiency and effectiveness of policies aimed at citizens and supporting initiatives
+                capable of promoting the sustainable development of the territories involved.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12">
+          <article class="news-card with-image card border-0 shadow-sm h-100" data-type="news">
+            <div class="row g-0 align-items-stretch">
+              <div class="col-lg-4">
+                <div class="news-media video h-100">
+                  <div class="video-wrapper">
+                    <iframe
+                      src="https://www.youtube.com/embed/Uiap4NPV_50"
+                      title="YouTube video player"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen>
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="card-body news-content h-100">
+                  <div class="news-meta">
+                    <span class="pill pill-news">NEWS</span>
+                    <time datetime="2025-11-05" class="news-date">5 Nov 2025</time>
+                  </div>
+                  <h2 class="news-card-title">
+                    Recording of the event “Cohesion policies, direct European funds, and territorial development” now available
+                  </h2>
+                  <p class="news-text">
+                    Please note that the full recording of the event held on October 27, 2025,
+                    at the ANCI Lombardia headquarters in Milan, is available on the ANCI Lombardia YouTube channel.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12">
+          <article class="news-card with-image card border-0 shadow-sm h-100" data-type="news">
+            <div class="row g-0 align-items-stretch">
+              <div class="col-lg-4">
+                <div class="news-media h-100">
+                  <img src="images/5483_20251112_114156.jpg" alt="Matteo Luigi Bianchi" class="img-fluid w-100 h-100 object-fit-cover">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="card-body news-content h-100">
+                  <div class="news-meta">
+                    <span class="pill pill-news">NEWS</span>
+                    <time datetime="2025-11-12" class="news-date">12 Nov 2025</time>
+                  </div>
+                  <h2 class="news-card-title">
+                    European programming, Bianchi: “Europe cannot do without living in cities”
+                  </h2>
+                  <p class="news-excerpt">
+                    The Deputy Secretary of ANCI Lombardy and member of the Committee of the Regions Matteo Luigi Bianchi
+                    at the Conference on EUI and European programming in Bologna.
+                  </p>
+                  <p class="news-text">
+                    On the opening day of the 42nd ANCI Assembly in Bologna, EUIs, urban innovation and regeneration programs
+                    were the focus of a meeting that centered on the experiences of municipalities. <br>
+                    Bianchi emphasized how this year the Association arrives at this event with a significant new development:
+                    ANCI has become the national Urban Contact Point for the EUI Program. It is a clear political signal:
+                    Europe sees Italian municipalities as reliable players, capable of innovating, regenerating, and experimenting.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12">
+          <article class="news-card with-image card border-0 shadow-sm h-100" data-type="news">
+            <div class="row g-0 align-items-stretch">
+              <div class="col-lg-4">
+                <div class="news-media h-100">
+                  <img src="images/5469_Guerra_Foti.jpeg" alt="Event with Minister Foti" class="img-fluid w-100 h-100 object-fit-cover">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="card-body news-content h-100">
+                  <div class="news-meta">
+                    <span class="pill pill-news">NEWS</span>
+                    <time datetime="2025-10-27" class="news-date">27 Oct 2025</time>
+                  </div>
+                  <h2 class="news-card-title">
+                    Event: “Cohesion policies, European funds, and territorial development” October 27
+                  </h2>
+                  <p class="news-excerpt">
+                    ANCI Lombardia proposes an experimental workshop to Minister Foti to support municipalities in the use of EU resources.
+                  </p>
+                  <p class="news-text">
+                    The future of cohesion policies, the prospects for direct European funds, and the challenges for sustainable
+                    territorial development were the focus of the meeting “Cohesion policies, direct European funds, and territorial development,”
+                    held today at the headquarters of ANCI Lombardia, attended by, among others, the President of ANCI Lombardia,
+                    Mauro Guerra, the Minister for European Affairs, the PNRR and Cohesion Policies, Tommaso Foti, and the Undersecretary
+                    to the Presidency with responsibility for International and European Relations of the Lombardy Region, Raffaele Cattaneo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12">
+          <article class="news-card card border-0 shadow-sm h-100" data-type="news">
+            <div class="card-body">
+              <div class="news-meta">
+                <span class="pill pill-news">NEWS</span>
+                <time datetime="2025-10-17" class="news-date">17 Oct 2025</time>
+              </div>
+              <h2 class="news-card-title">
+                ANCI Lombardy at the European Week of Regions and Cities 2025
+              </h2>
+              <p class="news-excerpt">
+                Deputy Secretary Matteo Luigi Bianchi speaks in Brussels on innovation and European standardization
+              </p>
+              <p class="news-text">
+                During the <b>“Shaping Standards Together”</b> meeting, organized by the European AFCOS project and dedicated
+                to the theme of standardization as a tool for strengthening innovation, competitiveness, and territorial cohesion,
+                Bianchi stated: <i>"Standardization is not just a technical issue, but a way to build trust and collaboration
+                between territories, businesses, and citizens. When we share common rules, we also build a common vision of
+                Europe—one that is closer to the territories and more capable of transforming innovation into concrete development."</i><br>
+                ANCI Lombardia thus confirms its commitment to promoting the active participation of Lombardy and Italian
+                municipalities in European policies, fostering dialogue between local authorities, the productive world, and EU institutions.
+              </p>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-md-4">
+          <div class="footer-col">
+            <h3>Contact</h3>
+            <p>Email: europa@anci.lombardia.it</p>
+            <p>Phone: +39 02 7262 9674</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="footer-col">
+            <h3>Follow Us</h3>
+
+            <div class="footer-social d-flex gap-3 flex-wrap">
+              <a href="https://www.linkedin.com/showcase/europa-dei-comuni" target="_blank" rel="noopener noreferrer">
+                <img src="icons/linkedin_3938044.png" alt="LinkedIn">
+              </a>
+
+              <a href="https://www.facebook.com/anci.lombardia/" target="_blank" rel="noopener noreferrer">
+                <img src="icons/facebook_2673726.png" alt="Facebook">
+              </a>
+
+              <a href="https://youtube.com/@anci_lombardia?si=CEsKxQLe9LBh0VyZ" target="_blank" rel="noopener noreferrer">
+                <img src="icons/youtube_2673883.png" alt="Youtube">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="footer-col">
+            <h3>Where We Are</h3>
+            <p>Via Rovello 2, Milan, Lombardy, Italy</p>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.163228347202!2d9.1847795!3d45.4665157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6ac29b25da7%3A0x9b0c02e86732118a!2sANCI%20Lombardia!5e0!3m2!1sen!2sit!4v1771770162923!5m2!1sen!2sit"
+              width="100%"
+              height="150"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="ANCI Lombardia map"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-privacy mt-4">
+        <h4>Privacy &amp; Cookies</h4>
+        <p>
+          This website uses cookies exclusively for technical and functional purposes
+          to ensure the proper functioning of the website and to store user preferences.
+        </p>
+
+        <p>
+          The information presented on this website relates to the activities of the
+          Europe Department of ANCI Lombardia and aims to provide an overview of projects,
+          events, and initiatives connected to European cooperation and local authorities.
+        </p>
+
+        <p>
+          For further information, users may contact the Europe Department of ANCI Lombardia
+          through the contact details provided on this website.
+        </p>
+      </div>
+
+      <div class="footer-bottom"></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="news.js"></script>
+</body>
+</html>
